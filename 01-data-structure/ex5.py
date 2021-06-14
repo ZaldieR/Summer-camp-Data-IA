@@ -71,9 +71,9 @@ def main():
         try:
             ch = int(ch)
         except:
-            exit(84)
+            ch = 0
         if not ch > 0 and not ch < 5 :
-            exit(0)
+            print("Bad input")
         if ch == 1:
             wallet.consult_my_balance()
         if ch == 2:
