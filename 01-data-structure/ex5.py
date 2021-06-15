@@ -47,7 +47,7 @@ class Budget():
         print("Enter value: ", end='')
         value = input()
         try:
-            value = int(value)
+            value = float(value)
         except:
             print("Bad value")
             return

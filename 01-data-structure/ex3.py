@@ -31,8 +31,12 @@ class Budget():
 
 def main():
     wallet = Budget("./test.json")
+    done = []
     for i in wallet.get_category():
-        print(i)
-        wallet.show_transactions(i)
+        if (i not in done):
+            print(i)
+            wallet.show_transactions(i)
+        done.append(i)
+
 
 main()
